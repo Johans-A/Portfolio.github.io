@@ -1,0 +1,115 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f7d06c 0%, #7ed6df 100%);
+    color: #232323;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+    color: #fff;
+    padding: 38px 0 26px 0;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 6px 22px 0 rgba(250, 90, 123, 0.12);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0 2px 12px rgba(106,130,251,0.15);
+}
+
+header p {
+    font-size: 1.09rem;
+    margin: 5px 0;
+}
+
+main {
+    background: rgba(255,255,255,0.98);
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(252,92,125,0.10), 0 1.5px 8px #7ed6df30;
+    padding: 32px 34px;
+    margin-top: -26px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+}
+
+h2 {
+    color: #fc5c7d;
+    font-size: 1.35rem;
+    margin-bottom: 9px;
+    border-bottom: 2px solid #7ed6df80;
+    padding-bottom: 3px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+ul {
+    margin-left: 26px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 7px;
+    font-size: 1.03rem;
+    transition: background 0.2s;
+}
+
+li:hover {
+    background: #fff6ea;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+
+strong {
+    color: #6a82fb;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+    color: #fff;
+    padding: 16px 0;
+    margin-top: 42px;
+    border-radius: 22px 22px 0 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.6px;
+    box-shadow: 0 -2px 12px rgba(252,92,125,0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container, main {
+        padding: 6px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    main {
+        padding: 13px 4px;
+    }
+    h2 {
+        font-size: 1.05rem;
+    }
+}
